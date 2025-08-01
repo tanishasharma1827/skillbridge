@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chatbot Support - SkillBridge</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    .feature-page {
+  padding: 100px 20px;
+  color: var(--white);
+  background: linear-gradient(135deg, var(--black) 0%, #0a0a0a 100%);
+}
+
+.chatbot-box {
+  background-color: #1a2a50;
+  padding: 20px;
+  border-radius: 15px;
+  color: white;
+  margin-top: 30px;
+}
+
+.chat-log {
+  max-height: 200px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.chatbot-box input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 onclick="window.location.href='skill.html'">SkillBridge</h1>
+    </div>
+  </header>
+
+  <section class="chatbot-page">
+    <div class="container">
+      <h2>🤖 Chatbot Interface</h2>
+      <p>Here’s where you interact with our AI career guide.</p>
+      <!-- Embed chatbot or placeholder -->
+      <div class="chatbot-box">
+        <div class="chat-log">
+        <p><strong>You:</strong> What career suits me?</p>
+         <p><strong>Bot:</strong> Based on your interests, data science may be a great fit!</p>
+        </div>
+        <input type="text" placeholder="Type your message..." />
+       </div>
+
+    </div>
+  </section>
+</body>
+</html>
