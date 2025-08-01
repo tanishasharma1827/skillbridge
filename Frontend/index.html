@@ -1,1 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SkillBridge - Your Career Companion</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <!-- Home Page -->
+  <div id="home-page" class="page">
+    <header>
+      <div class="container">
+        <h1 onclick="showPage('home')">SkillBridge</h1>
+        <nav>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <div class="dropdown">
+            <a href="#features" class="dropdown-toggle">Features</a>
+            <div class="dropdown-menu">
+              <div class="dropdown-content">
+                <div class="feature-category">
+                  <h4>Assessment & Discovery</h4>
+                  <a href="quiz.html" class="feature-item">
+                    <span class="feature-icon">🧩</span>
+                    <div>
+                      <span class="feature-name">Multi-step Onboarding Quiz</span>
+                      <span class="feature-desc">Comprehensive personality and skill assessment</span>
+                    </div>
+                  </a>
+                  <a href="prediction.html" class="feature-item">
+                    <span class="feature-icon">🔮</span>
+                    <div>
+                      <span class="feature-name">Career Prediction Logic</span>
+                      <span class="feature-desc">AI-powered career path recommendations</span>
+                    </div>
+                  </a>
+                </div>
+                
+                <div class="feature-category">
+                  <h4>Personalization</h4>
+                  <a href="dashboard.html" class="feature-item">
+                    <span class="feature-icon">📊</span>
+                    <div>
+                      <span class="feature-name">Personalized Dashboard</span>
+                      <span class="feature-desc">Customized insights and progress tracking</span>
+                    </div>
+                  </a>
+                  <a href="courses.html" class="feature-item">
+                    <span class="feature-icon">📚</span>
+                    <div>
+                      <span class="feature-name">Course Recommendations</span>
+                      <span class="feature-desc">Tailored learning paths for your goals</span>
+                    </div>
+                  </a>
+                </div>
+                
+                <div class="feature-category">
+                  <h4>Growth & Analytics</h4>
+                  <a href="roadmap.html" class="feature-item">
+                    <span class="feature-icon">🗺️</span>
+                    <div>
+                      <span class="feature-name">Career Roadmap Viewer</span>
+                      <span class="feature-desc">Visual journey to your dream career</span>
+                    </div>
+                  </a>
+                  <a href="analytics.html" class="feature-item">
+                    <span class="feature-icon">📈</span>
+                    <div>
+                      <span class="feature-name">Skill Progress & Analytics</span>
+                      <span class="feature-desc">Track your development over time</span>
+                    </div>
+                  </a>
+                  <a href="chatbot.html" class="feature-item">
+                    <span class="feature-icon">🤖</span>
+                    <div>
+                      <span class="feature-name">Chatbot Interface</span>
+                      <span class="feature-desc">24/7 AI-powered career guidance</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#reviews">Reviews</a>
+          <div class="auth-buttons">
+            <a href="#" class="btn-login" onclick="showPage('login')">Login</a>
+            <a href="#" class="btn-signup" onclick="showPage('signup')">Sign Up</a>
+          </div>
+        </nav>
+      </div>
+    </header>
 
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h2>Bridge the Gap to Your Dream Career</h2>
+          <p>Smart guidance for students, graduates, and career switchers.</p>
+          <a href="#" class="cta-button">Take the Quiz</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="interest-choice">
+      <div class="container">
+        <h3>How would you like to begin?</h3>
+        <div class="choice-buttons">
+          <a href="#" class="choice-button"><span>🔍 Help Me Find My Interest</span></a>
+          <a href="#" class="choice-button"><span>🎯 I Know What I Want</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="personas">
+      <div class="container">
+        <h3>Who Are You?</h3>
+        <div class="cards">
+          <div class="card">
+            <h4>🎓 Student</h4>
+            <p>Discover your career path based on your interests and skills. Get personalized recommendations tailored to your academic journey.</p>
+          </div>
+          <div class="card">
+            <h4>🎯 Graduate</h4>
+            <p>Find the next step aligned with your academic background. Transform your education into meaningful career opportunities.</p>
+          </div>
+          <div class="card">
+            <h4>🔄 Career Switcher</h4>
+            <p>Transition smoothly into a new domain with tailored guidance. Make confident career changes with our expert support.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-us">
+      <div class="container">
+        <h3>About SkillBridge</h3>
+        <div class="about-content">
+          <div class="about-text">
+            <p>SkillBridge is your trusted career companion, designed to empower individuals at every stage of their professional journey. Founded by passionate developers from Group 4, CMPN V, we understand the challenges faced by students, graduates, and career switchers in today's dynamic job market.</p>
+            <p>Our platform combines cutting-edge technology with personalized guidance to help you discover your true potential and navigate your career path with confidence. We believe that everyone deserves access to quality career guidance, regardless of their background or current situation.</p>
+          </div>
+          <div class="about-stats">
+            <div class="stat-item">
+              <h4>1000+</h4>
+              <p>Users Guided</p>
+            </div>
+            <div class="stat-item">
+              <h4>50+</h4>
+              <p>Career Paths</p>
+            </div>
+            <div class="stat-item">
+              <h4>95%</h4>
+              <p>Success Rate</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission & Vision Section -->
+    <section class="mission-vision">
+      <div class="container">
+        <div class="mv-content">
+          <div class="mission">
+            <div class="mv-icon">🎯</div>
+            <h3>Our Mission</h3>
+            <p>To democratize career guidance by providing accessible, personalized, and data-driven insights that empower individuals to make informed decisions about their professional future. We strive to bridge the gap between education and employment, ensuring no one feels lost in their career journey.</p>
+          </div>
+          <div class="vision">
+            <div class="mv-icon">🚀</div>
+            <h3>Our Vision</h3>
+            <p>To become the leading platform that transforms how people discover, plan, and achieve their career goals. We envision a world where every individual has clear direction, confidence, and the right tools to build a fulfilling professional life that aligns with their passions and skills.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews/Feedback Section -->
+    <section class="reviews">
+      <div class="container">
+        <h3>What Our Users Say</h3>
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"SkillBridge completely changed my perspective on career planning. As a confused engineering student, I found clarity and direction through their personalized guidance. Now I'm confident about my future in data science!"</p>
+            <div class="reviewer">
+              <div class="reviewer-info">
+                <h4>Priya Sharma</h4>
+                <span>Computer Engineering Student</span>
+              </div>
+            </div>
+          </div>
+          <div class="review-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"After 5 years in marketing, I wanted to switch to UX design but didn't know where to start. SkillBridge's career transition program gave me the roadmap I needed. I'm now working as a UX designer at a startup!"</p>
+            <div class="reviewer">
+              <div class="reviewer-info">
+                <h4>Rahul Patel</h4>
+                <span>UX Designer (Former Marketing Executive)</span>
+              </div>
+            </div>
+          </div>
+          <div class="review-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"The platform's interest assessment helped me discover my passion for cybersecurity. The detailed career path recommendations and skill development suggestions were spot-on. Highly recommend for any graduate!"</p>
+            <div class="reviewer">
+              <div class="reviewer-info">
+                <h4>Anjali Reddy</h4>
+                <span>Cybersecurity Analyst</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="review-stats">
+          <div class="review-stat">
+            <h4>4.8/5</h4>
+            <p>Average Rating</p>
+          </div>
+          <div class="review-stat">
+            <h4>500+</h4>
+            <p>Happy Reviews</p>
+          </div>
+          <div class="review-stat">
+            <h4>98%</h4>
+            <p>Recommend Us</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 SkillBridge | Built by Group 4, CMPN V</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Login Page -->
+  <div id="login-page" class="page auth-page">
+    <div class="auth-container">
+      <a href="#" class="back-to-home" onclick="showPage('home')">&larr; Back to Home</a>
+      <h2>Welcome Back</h2>
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="loginEmail">Email Address</label>
+          <input type="email" id="loginEmail" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="loginPassword">Password</label>
+          <input type="password" id="loginPassword" name="password" placeholder="Enter your password" required>
+        </div>
+        <button type="submit" class="auth-button">Login</button>
+      </form>
+      <div class="auth-link">
+        <p>Don't have an account? <a href="#" onclick="showPage('signup')">Sign up here</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sign Up Page -->
+  <div id="signup-page" class="page auth-page">
+    <div class="auth-container">
+      <a href="#" class="back-to-home" onclick="showPage('home')">&larr; Back to Home</a>
+      <h2>Join SkillBridge</h2>
+      <form id="signupForm">
+        <div class="form-group">
+          <label for="signupName">Full Name</label>
+          <input type="text" id="signupName" name="name" placeholder="Enter your full name" required>
+        </div>
+        <div class="form-group">
+          <label for="signupEmail">Email Address</label>
+          <input type="email" id="signupEmail" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="signupPassword">Password</label>
+          <input type="password" id="signupPassword" name="password" placeholder="Create a password" required>
+        </div>
+        <div class="form-group">
+          <label for="confirmPassword">Confirm Password</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
+        </div>
+        <button type="submit" class="auth-button">Sign Up</button>
+      </form>
+      <div class="auth-link">
+        <p>Already have an account? <a href="#" onclick="showPage('login')">Login here</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Page navigation
+    function showPage(pageId) {
+      // Hide all pages
+      const pages = document.querySelectorAll('.page');
+      pages.forEach(page => {
+        page.style.display = 'none';
+        page.classList.remove('active');
+      });
+
+      // Show selected page
+      const targetPage = document.getElementById(pageId + '-page');
+      if (targetPage) {
+        targetPage.style.display = pageId === 'home' ? 'block' : 'flex';
+        targetPage.classList.add('active');
+        
+        // Restart animations
+        targetPage.style.animation = 'none';
+        targetPage.offsetHeight; // Trigger reflow
+        targetPage.style.animation = null;
+      }
+    }
+
+    // Form handling
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const email = document.getElementById('loginEmail').value;
+      const password = document.getElementById('loginPassword').value;
+      
+      // Simulate login process
+      alert('Login functionality would be implemented here!\nEmail: ' + email);
+      
+      // In a real app, you would make an API call here
+      // For demo purposes, redirect to home
+      showPage('home');
+    });
+
+    document.getElementById('signupForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('signupName').value;
+      const email = document.getElementById('signupEmail').value;
+      const password = document.getElementById('signupPassword').value;
+      const confirmPassword = document.getElementById('confirmPassword').value;
+      
+      if (password !== confirmPassword) {
+        alert('Passwords do not match!');
+        return;
+      }
+      
+      // Simulate signup process
+      alert('Sign up functionality would be implemented here!\nWelcome, ' + name + '!');
+      
+      // In a real app, you would make an API call here
+      // For demo purposes, redirect to home
+      showPage('home');
+    });
+
+    // Add smooth scroll behavior for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href !== '#' && !href.includes('onclick')) {
+          e.preventDefault();
+          const targetId = href.substring(1);
+          let target;
+          
+          // Handle different section mappings
+          switch(targetId) {
+            case 'about':
+              target = document.querySelector('.about-us');
+              break;
+            case 'reviews':
+              target = document.querySelector('.reviews');
+              break;
+            case 'home':
+              target = document.querySelector('.hero');
+              break;
+            default:
+              target = document.querySelector(href);
+          }
+          
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        }
+      });
+    });
+
+    // Initialize page
+    showPage('home');
+
+    // Add loading animation for buttons
+    document.querySelectorAll('.cta-button, .choice-button, .auth-button').forEach(button => {
+      button.addEventListener('click', function() {
+        this.style.transform = 'scale(0.95)';
+        setTimeout(() => {
+          this.style.transform = '';
+        }, 150);
+      });
+    });
+
+    // Add floating animation to cards on scroll
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver(function(entries) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.animation = 'slideInUp 0.8s ease forwards';
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.card').forEach(card => {
+      observer.observe(card);
+    });
+  </script>
+</body>
+</html>
