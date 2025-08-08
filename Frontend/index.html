@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SkillBridge - Your Career Companion</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="dummy.css">
 </head>
 <body>
  <!-- Home Page -->
@@ -288,127 +288,7 @@
     </div>
   </div>
 
-  <script>
-    // Page navigation
-    function showPage(pageId) {
-      // Hide all pages
-      const pages = document.querySelectorAll('.page');
-      pages.forEach(page => {
-        page.style.display = 'none';
-        page.classList.remove('active');
-      });
-
-      // Show selected page
-      const targetPage = document.getElementById(pageId + '-page');
-      if (targetPage) {
-        targetPage.style.display = pageId === 'home' ? 'block' : 'flex';
-        targetPage.classList.add('active');
-        
-        // Restart animations
-        targetPage.style.animation = 'none';
-        targetPage.offsetHeight; // Trigger reflow
-        targetPage.style.animation = null;
-      }
-    }
-
-    // Form handling
-    document.getElementById('loginForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      const email = document.getElementById('loginEmail').value;
-      const password = document.getElementById('loginPassword').value;
-      
-      // Simulate login process
-      alert('Login functionality would be implemented here!\nEmail: ' + email);
-      
-      // In a real app, you would make an API call here
-      // For demo purposes, redirect to home
-      showPage('home');
-    });
-
-    document.getElementById('signupForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      const name = document.getElementById('signupName').value;
-      const email = document.getElementById('signupEmail').value;
-      const password = document.getElementById('signupPassword').value;
-      const confirmPassword = document.getElementById('confirmPassword').value;
-      
-      if (password !== confirmPassword) {
-        alert('Passwords do not match!');
-        return;
-      }
-      
-      // Simulate signup process
-      alert('Sign up functionality would be implemented here!\nWelcome, ' + name + '!');
-      
-      // In a real app, you would make an API call here
-      // For demo purposes, redirect to home
-      showPage('home');
-    });
-
-    // Add smooth scroll behavior for internal links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        const href = this.getAttribute('href');
-        if (href !== '#' && !href.includes('onclick')) {
-          e.preventDefault();
-          const targetId = href.substring(1);
-          let target;
-          
-          // Handle different section mappings
-          switch(targetId) {
-            case 'about':
-              target = document.querySelector('.about-us');
-              break;
-            case 'reviews':
-              target = document.querySelector('.reviews');
-              break;
-            case 'home':
-              target = document.querySelector('.hero');
-              break;
-            default:
-              target = document.querySelector(href);
-          }
-          
-          if (target) {
-            target.scrollIntoView({
-              behavior: 'smooth',
-              block: 'start'
-            });
-          }
-        }
-      });
-    });
-
-    // Initialize page
-    showPage('home');
-
-    // Add loading animation for buttons
-    document.querySelectorAll('.cta-button, .choice-button, .auth-button').forEach(button => {
-      button.addEventListener('click', function() {
-        this.style.transform = 'scale(0.95)';
-        setTimeout(() => {
-          this.style.transform = '';
-        }, 150);
-      });
-    });
-
-    // Add floating animation to cards on scroll
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver(function(entries) {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.style.animation = 'slideInUp 0.8s ease forwards';
-        }
-      });
-    }, observerOptions);
-
-    document.querySelectorAll('.card').forEach(card => {
-      observer.observe(card);
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
+
